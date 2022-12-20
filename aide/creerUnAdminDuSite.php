@@ -2,11 +2,11 @@
     //Il faut créer un user avec le role admin dans la bdd pour avoir une personne administrateur du back-office(console d'administration)
     // pour cela on créer un formulaire user pour renseigner la bdd 
     //Au niveau du CRUD, nous allons faire un Create avec l'instruction SQL INSERT INTO
-    include("../assets/inc/headFront.php");
+    include("../assets/inc/headBack.php");
 ?>
 <title>Création d'un admin</title>
 <?php 
-    include("../assets/inc/headerFront.php")
+    include("../assets/inc/headerBack.php")
 ?>
 <div class="container">
     <div class="row">
@@ -46,7 +46,7 @@
                     // si la case "isAdmin" est cochée
                     $role = 1;
                 }
-                else{
+                else {
                     // si la case "isAdmin" n'est pas cochée
                     $role = 2;
                 }

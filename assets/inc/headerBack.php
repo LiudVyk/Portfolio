@@ -15,13 +15,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Accueil Admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Gestion des utilisateurs</a>
+                            <a href="../aide/creerUnAdminDuSite.php" class="nav-link">Créer admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Gestion des compétences</a>
+                            <a href="../admin/listUsers.php" class="nav-link ">List User</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Gestion de la messagerie</a>
+                            <a  href="../admin/index.php" class="nav-link ">Update </a>
                         </li>
                     </ul>
 

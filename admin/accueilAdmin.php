@@ -36,4 +36,4 @@ header("Location: ../admin/index.php");
 
 <?php
     include("../assets/inc/footerBack.php")
-?>
+?>  
