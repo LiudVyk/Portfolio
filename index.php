@@ -18,8 +18,10 @@ include("assets/inc/headerFront.php");
             }
             ?>
         </div>
-    </div>
-        
+
+        <h2 id ="about">About</h2>
+        <h2 id = "project">Project</h2>
+        <h2 id = "contact">Contact</h2>
     </main>
 
 <?php

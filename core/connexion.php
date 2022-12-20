@@ -6,7 +6,7 @@ $online = false ;
 if(!$online):
     $host = "localhost";
     $user = "root";
-    $password = "";  // pour mac c'est "root", et pour les pc " " 
+    $password = "root";  // pour mac c'est "root", et pour les pc " " 
     $bdd = "portfolio";
 else:// A remplir avec les données que vous fournira votre hébergeur :
     //le nom du serveur

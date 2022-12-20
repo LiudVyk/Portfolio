@@ -17,7 +17,12 @@
                 <input type="text" class="mt-3 form-control" name="prenom" placeholder="Votre prenom">
                 <input type="email" class="mt-3 form-control" name="email" placeholder="Votre email">
                 <input type="password" class=" mt-3 form-control" name="password" placeholder="Votre mot de passe">
+                <div>
+                    <input type="checkbox" name="isAdmin" id="isAdmin" >
+                <label for="isAdmin">Vous etes admin</label>
+            </div>
                 <button type="submit" class="btn mt-3 text-align bg-primary fw-bold" name="soumettre">Enregistrer</button>
+               
             </form>
             <?php
             // on récupère le fichier de connexion -> connexion.php qui
@@ -36,8 +41,18 @@
                 //encodage du mot de passe (12 est l'option de niveau d'encodage):
                 $option = ['cost => 12'];
                 $password = password_hash(trim($_POST["password"]),PASSWORD_DEFAULT, $option);
+                
+                if(isset($_POST["isAdmin"])){
+                    // si la case "isAdmin" est cochée
+                    $role = 1;
+                }
+                else{
+                    // si la case "isAdmin" n'est pas cochée
+                    $role = 2;
+                }
+                
                 // on dit que 1 est admin pour le role
-                $role = 1;
+               
                 //2 - Préparation de l'écriture SQL
                 $sql = "
                         INSERT INTO user (
